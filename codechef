@@ -1,0 +1,24 @@
+import java.util.*;
+public class Co-prime{
+public int check(int a,int b){
+int i,h=0,p=0;
+p=a*b;
+for(i=1;i<=p;i++){
+if((a%i==0)&&(b%i==0))
+h=i;
+}
+return(h);
+}
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+Co-prime ob=new Co-prime();
+System.out.println("Enter two numbers");
+int a1=sc.nextInt();
+int b1=sc.nextInt();
+int h1=ob.check(a1,b1);
+if(h1==1)
+System.out.println("They are Co-prime");
+else
+system.out.println("They are not Co-prime");
+}
+}
